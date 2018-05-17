@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Precios de tus mejores guitarras!!</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/invie.css"/>
+  </head>
+  <body>
+    <header id="header" class="header backgroud"> <!-- header -->
+      <div class="contenedor">
+        <figure class="logotipo">  <!--logotipo -->
+          <img src="images/invie.png" width = '186' height="60" alt= "Invie Logotipo"/>
+        </figure>
+        <nav class="menu"><!-- menu -->
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html#guitarras">Guitaras</a>
+            <!-- para navegar al id de guitarras -->
+          </li>
+          <li>
+            <a href="precios.html">Precios</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <section class="tabla">
+    <div class="contenedor">
+      <table>
+        <!-- etiqueta table para crear tablas(se divide en head y body) -->
+        <thead>
+          <!-- tr = table row, th = tableHead, td = table-standart-->
+          <tr>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000</td>
+            <td>Una guitarra muy pro</td>
+          </tr>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000</td>
+            <td>Una guitarra muy pro</td>
+          </tr>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000</td>
+            <td>Una guitarra muy pro</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src= "images/invie-white.png" alt="logotipo blanco"/>
+          <a href="tel:+573024456678"><strong>Telefono</strong><span>3024456678</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+          <!-- span sirve para concatenar texto -->
+          <!-- la etiqueta a es siempre para enlaces -->
+        </div>
+        <div>
+          <form class="formulario">
+            <div class="col1">
+              <label for="nombre">Nombre</label>
+              <!-- label contiene el atributo "for="UnId"" y Define un rótulo para un elemento <input>.-->
+              <!-- input es la forma mas basica de pedir datos -->
+              <input type="text" required id="nombre" name="nombre"/>
+              <!-- required cuando es type text pide que haya algo que enviar -->
+              <!-- value="algo" deja un valor por defecto en la caja -->
+              <!-- placeholder="algo" pone un texto difuminado no sombreable -->
+              <!-- name indica que es lo que se envia al servidor -->
+              <label for="email">E-mail</label>
+              <input type="email" required id="email" name="email"/>
+              <!-- required en tipo email pide que se escriba un correo(@) -->
+              <!-- type="radio" define una seleccion multiple(o una o la otra) -->
+              <!-- tambien se puede declarar el input detro del label -->
+              <div class="sexo">
+                <label for="mujer">
+                  <input type="radio" checked id = "mujer" name="sexo" value="mujer"/>mujer
+                </label>
+                <!-- name nos permite seleccionar una o la otra -->
+                <!-- value le indica al backend que estamos enviando -->
+                <label for="hombre">
+                  <input type="radio" id = "hombre" name="sexo" value="hombre"/>hombre
+                </label>
+              </div>
+              <div class="intereses">
+                <label for="Cotizacion">
+                  <input type="checkbox" checked id = "Cotizacion" name="intereses" value="cotizacion"/>Cotizacion
+                  <!-- type ="checkbox" permite hacer seleccion multiple -->
+                </label>
+                <label for="Reclamos">
+                  <input type="checkbox" id = "Reclamos" name="intereses" value="reclamos"/>Reclamos
+                  <!-- type ="checkbox" permite hacer seleccion multiple -->
+                </label>
+                <label for="Comentarios">
+                  <input type="checkbox" id = "Comentarios" name="intereses" value="comentarios"/>Comentarios
+                  <!-- type ="checkbox" permite hacer seleccion multiple -->
+                </label>
+                <label for="Otros">
+                  <input type="checkbox" id = "Otros" name="intereses" value="otros"/>Otros
+                  <!-- type ="checkbox" permite hacer seleccion multiple -->
+                </label>
+              </div>
+            </div>
+              <div class="col2">
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+                <!--Se crea una area de texto -->
+                <input type="submit" value="Enviar" class="button"/>
+                <!-- crea un boton de enviar -->
+              </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
